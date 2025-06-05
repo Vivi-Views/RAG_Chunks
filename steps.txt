@@ -1,0 +1,30 @@
+# Python version
+python --version
+python3.10 -m venv ragenv
+.\ragenv\Scripts\activate
+pip install -r requirements.txt
+
+# Upgarde pip
+pip install --upgrade pip	
+
+# Run Requirements
+pip install -r requirements.txt
+
+# Run It
+uvicorn main:app --reload
+
+# test it
+curl -X POST "http://127.0.0.1:8000/parse-pdf" -F "file=@VIVI_CV.pdf"
+curl -X POST "http://127.0.0.1:8000/parse-multiple-pdfs" -F "file=@VIVI_CV.pdf"
+
+# curl -u admin:anypassword -X POST "http://127.0.0.1:8000/parse-multiple-pdfs" -F "files=@yourfile.pdf"
+curl -u admin:anypassword -F "files=@VIVI_CV.pdf" http://127.0.0.1:8000/parse-multiple-pdfs
+
+curl -u admin:anypassword -X POST "http://127.0.0.1:8000/ask" -H "Content-Type: application/json" -d "{\"query\": \"Your question about the PDF?\"}"
+
+curl -u admin:anypassword -X POST "http://127.0.0.1:8000/ask" -H "Content-Type: application/json" -d "{\"query\": \"what are my skills ?\"}"
+
+# Final
+uvicorn main:app --reload
+curl -u admin:anypassword -F "files=@VIVI_CV.pdf" http://127.0.0.1:8000/parse-multiple-pdfs
+curl -u admin:anypassword -X POST "http://127.0.0.1:8000/ask" -H "Content-Type: application/json" -d "{\"query\": \"what are my skills ?\"}"
