@@ -27,6 +27,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from sentence_transformers import SentenceTransformer
 import fitz  # PyMuPD
 from sklearn.feature_extraction.text import CountVectorizer
+from openai import OpenAI
 
 # ====== IMPORTS ====== #
 
@@ -58,7 +59,7 @@ class QueryInput(BaseModel):
 # ====== OPENAI_API_KEY ====== #
 import openai
 openai.api_key = os.getenv("OPENAI_API_KEY")
-# client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI()
 
 
 # ====== Config & Security Hardening ====== #
@@ -253,6 +254,7 @@ def parse_pdf(file_path):
 # ====== CHUNK QUALITY METRICS ====== #
 
 def compute_chunk_quality_metrics(chunks):
+
     # Metric 1: Meaningful Chunk Ratio
     meaningful_chunks = [c for c in chunks if len(c.strip()) > 20]
     meaningful_chunk_ratio = len(meaningful_chunks) / len(chunks)
@@ -470,7 +472,7 @@ def ask_question(input: QueryInput, credentials: HTTPBasicCredentials = Depends(
 
 
     # 🧠 Step 4: Call GPT-4 to generate the answer
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-4",
         messages=messages
     )
