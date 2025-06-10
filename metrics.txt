@@ -1,0 +1,50 @@
+"chunk_quality_metrics":
+
+[{
+
+"meaningful_chunk_ratio":1.0, # each chunk has more than 20 chars
+"average_chunk_cohesion":0.071, # each chunk is slightly related, not fragmented not duplicated
+"redundancy_ratio":0.0, # Duplicate chunk ratio
+"entity_density_per_chunk":9.0, # named entities per chunk
+"token_efficiency":1.253, # How efficiently each chunk's tokens carry meaningful content (vs. fluff, filler, or stopwords).
+"context_overlap":0.123, # How well adjacent chunks preserve semantic continuity.
+"semantic_dissimilarity":0.877, # How different adjacent chunks are in meaning. Semantic Dissimilarity = 1 - Context Overlap
+"chunk_length_variance":584.667 # How much variation there is in chunk sizes (word count) across a document.
+
+}]
+
+
+"metrics":
+{
+
+"grounded_context_match_rate":0.0, # Measures whether the LLM’s answer actually uses the retrieved chunks. (installation manual)
+
+"query_drift_distance":0.688, # Quantifies how far the answer semantically strays from the query. ( Q & A , Chatbot, English comprehension)
+"redundancy_load_factor":0.8, # Detects if too many similar or repeated chunks were used. (same thing in other words, not useful)
+"zero_shot_fallback_indicator":0.0, # Flags whether the LLM gave a generic fallback answer (e.g., “I don’t know”). ( not a vague answer, good )
+"llm_used_retrieval_percent":0.0, # Estimates how much of the retrieved context was used in forming the answer.
+(llm ignored the retrieved chunks, not good )
+
+"anchor_keyword_coverage":0.0, # Measures how many important query keywords appear in the chunks.
+(None of the important keywords from the query appeared in the retrieved chunks, bad)
+
+"source_diversity_index":0.2, # Assesses whether chunks came from a variety of documents or just one.
+(Most retrieved chunks came from the same document or a narrow set of sources.)
+
+"noise_to_signal_ratio":0.0, # Detects how many chunks are too short or content-light (i.e., noisy).
+(All retrieved chunks are meaningful — no fluff, garbage, or overly short chunks.)
+
+"topical_drift_index":0.2, # Measures how semantically related the chunks are to each other.
+(Chunks are semantically connected and stay on the same topic — minimal drift.)
+
+"chunk_freshness_score":0.973, # Indicates how recent or up-to-date the source chunks are.
+(Nearly all retrieved chunks are recent or up-to-date.)
+
+"compression_utility_index":0.182, # Evaluates how efficiently the answer conveys meaning using the context.
+(The answer conveyed only a small portion of the useful information embedded in the context. There’s room for improvement.)
+
+"composite_score":0.298 # Aggregated overall score combining the most important metrics.
+(The overall quality of the retrieval + response pipeline is low. Several key metrics are underperforming)
+
+
+}

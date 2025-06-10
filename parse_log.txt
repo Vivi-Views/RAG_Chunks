@@ -1140,3 +1140,41 @@ pip install python-multipart
 2025-06-09 21:46:49,115 - INFO - Chunk Stored: e2532752-800a-4d73-aca4-0a748ff3f4a3 | File: temp_VIVI_CV.pdf | Page: 2
 2025-06-09 21:46:49,115 - INFO - Chunk Stored: cd7ab1f6-14fd-4b80-8f8a-9de63e0e5f3c | File: temp_VIVI_CV.pdf | Page: 3
 2025-06-09 21:47:02,993 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-09 23:03:31,821 - INFO - Use pytorch device_name: cpu
+2025-06-09 23:03:31,821 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-09 23:16:17,256 - INFO - Chunk Stored: e38734b1-83c0-491b-b8a2-1d86719f480e | File: temp_VIVI_CV.pdf | Page: 1
+2025-06-09 23:16:17,256 - INFO - Chunk Stored: edb248ce-dfc2-45d5-a7ce-e778cca52112 | File: temp_VIVI_CV.pdf | Page: 1
+2025-06-09 23:16:17,256 - INFO - Chunk Stored: ba8a372a-7d16-4ba8-acd9-c49caf4b48c7 | File: temp_VIVI_CV.pdf | Page: 1
+2025-06-09 23:16:17,256 - INFO - Chunk Stored: 6a49af37-ad65-44f0-891e-b950e1cbe9e1 | File: temp_VIVI_CV.pdf | Page: 1
+2025-06-09 23:16:17,257 - INFO - Chunk Stored: b3015da5-4491-4a92-bf4f-2883605bed99 | File: temp_VIVI_CV.pdf | Page: 2
+2025-06-09 23:16:17,257 - INFO - Chunk Stored: a2b4d462-70a6-4049-a277-b5e8ed8d7f34 | File: temp_VIVI_CV.pdf | Page: 2
+2025-06-09 23:16:17,257 - INFO - Chunk Stored: a49850fa-dc01-4ae9-be18-ea8d18cb930b | File: temp_VIVI_CV.pdf | Page: 2
+2025-06-09 23:16:17,257 - INFO - Chunk Stored: 29213115-6886-4c51-9a2e-50191f059d35 | File: temp_VIVI_CV.pdf | Page: 2
+2025-06-09 23:16:17,257 - INFO - Chunk Stored: 433c3f64-0eb9-41bd-973e-8bdef7e169ae | File: temp_VIVI_CV.pdf | Page: 3
+2025-06-09 23:17:11,356 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 12:12:50,432 - INFO - Use pytorch device_name: cpu
+2025-06-10 12:12:50,433 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-10 12:13:14,439 - INFO - Chunk Stored: b0bb0b71-a805-4f6a-965e-4c8d588c431b | File: temp_VIVI_CV.pdf | Page: 1
+2025-06-10 12:13:14,440 - INFO - Chunk Stored: 8bd090dd-5290-43ea-be94-6ac1af7b5a0f | File: temp_VIVI_CV.pdf | Page: 1
+2025-06-10 12:13:14,440 - INFO - Chunk Stored: 598d9b5c-c66d-4efe-b229-d4a8c71e4d0d | File: temp_VIVI_CV.pdf | Page: 1
+2025-06-10 12:13:14,441 - INFO - Chunk Stored: 9c471526-99cf-465b-835b-08de2e89a377 | File: temp_VIVI_CV.pdf | Page: 1
+2025-06-10 12:13:14,441 - INFO - Chunk Stored: 60d50baf-063d-4f71-b755-cf4e255f56e7 | File: temp_VIVI_CV.pdf | Page: 2
+2025-06-10 12:13:14,441 - INFO - Chunk Stored: d2510f7f-49d6-48da-9b8a-65a05b0c749e | File: temp_VIVI_CV.pdf | Page: 2
+2025-06-10 12:13:14,441 - INFO - Chunk Stored: a83f2010-250f-4eb1-b14f-9fadbb057d16 | File: temp_VIVI_CV.pdf | Page: 2
+2025-06-10 12:13:14,441 - INFO - Chunk Stored: b802194b-d4e9-4abd-9427-9c0ab0961a78 | File: temp_VIVI_CV.pdf | Page: 2
+2025-06-10 12:13:14,442 - INFO - Chunk Stored: 5ede4648-2b9f-46cc-8b53-7b0371a748b0 | File: temp_VIVI_CV.pdf | Page: 3
+2025-06-10 12:13:33,306 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 15:41:53,992 - INFO - Use pytorch device_name: cpu
+2025-06-10 15:41:53,992 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-10 15:42:13,157 - INFO - Use pytorch device_name: cpu
+2025-06-10 15:42:13,157 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-10 15:42:25,169 - INFO - Chunk Stored: 1108c6e1-138e-4a1e-8a0c-43b0aebfafe9 | File: temp_VIVI_CV.pdf | Page: 1
+2025-06-10 15:42:25,169 - INFO - Chunk Stored: 77c690b1-1dea-4897-b934-4abe1d1ff35d | File: temp_VIVI_CV.pdf | Page: 1
+2025-06-10 15:42:25,170 - INFO - Chunk Stored: 22c74a50-dd46-4eee-95a2-e4ce902afb56 | File: temp_VIVI_CV.pdf | Page: 1
+2025-06-10 15:42:25,170 - INFO - Chunk Stored: ef048fce-daa6-40a4-8c0c-ea2f54cc8a00 | File: temp_VIVI_CV.pdf | Page: 1
+2025-06-10 15:42:25,170 - INFO - Chunk Stored: 035bf420-d553-4434-960e-1ceaf77340a5 | File: temp_VIVI_CV.pdf | Page: 2
+2025-06-10 15:42:25,171 - INFO - Chunk Stored: 8f7da416-eb60-43ff-9673-0c6d983eb912 | File: temp_VIVI_CV.pdf | Page: 2
+2025-06-10 15:42:25,171 - INFO - Chunk Stored: de826325-a64f-45e7-a4bd-e1bb8d82608a | File: temp_VIVI_CV.pdf | Page: 2
+2025-06-10 15:42:25,171 - INFO - Chunk Stored: 358bd2d8-1fa4-49c9-a9b6-3b5d57c30c7a | File: temp_VIVI_CV.pdf | Page: 2
+2025-06-10 15:42:25,172 - INFO - Chunk Stored: 6621ebdc-810d-4136-b01f-7e0b5296aab3 | File: temp_VIVI_CV.pdf | Page: 3
+2025-06-10 15:42:34,417 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

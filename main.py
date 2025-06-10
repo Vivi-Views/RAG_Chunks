@@ -28,6 +28,7 @@ from sentence_transformers import SentenceTransformer
 import fitz  # PyMuPD
 from sklearn.feature_extraction.text import CountVectorizer
 from openai import OpenAI
+from dotenv import load_dotenv
 
 # ====== IMPORTS ====== #
 
@@ -35,7 +36,8 @@ from openai import OpenAI
 
 # ====== GLOBAL SET-UP ====== #
 
-
+# ==== load your environment variables ==== #
+load_dotenv()
 
 
 # ====== Logging Setup ====== #
@@ -57,9 +59,8 @@ class QueryInput(BaseModel):
     query: str
 
 # ====== OPENAI_API_KEY ====== #
-import openai
-openai.api_key = os.getenv("OPENAI_API_KEY")
-client = OpenAI()
+from openai import OpenAI
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 # ====== Config & Security Hardening ====== #
